@@ -32,4 +32,7 @@ router.post('upload', upload.single('photo'), (request, response) => {
     if (request.fileValidationError) return response.status(400).json({error: request.fileValidationError})
     return response.status(201).json({success: true});
 });
+
 module.exports = router;
+
+// pluralsight fix
